@@ -1,0 +1,2 @@
+1.) Create two folders client and api
+2.) go to the client directory and add " yarn create react-app ." run this command 
