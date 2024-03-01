@@ -1,2 +1,4 @@
 1.) Create two folders client and api
 2.) go to the client directory and add " yarn create react-app ." run this command 
+3.) to start the app yarn start
+3.) yarn add react-router-dom 
