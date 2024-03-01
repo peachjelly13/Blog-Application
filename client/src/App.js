@@ -1,57 +1,21 @@
 import logo from './logo.svg';
 import './App.css';
-
+import Post from './post';
+import Header from './header';
+import Layout from './layout';
+import { Route } from 'react-router-dom';
+import { Routes } from 'react-router-dom';
 function App() {
   return (
-    <main>
-      <header>
-        <a href="" className="logo">MY Blog</a>
-        <nav>
-          <a href="">Login</a>
-          <a href = "">Register</a>
-        </nav>
-      </header>
-      <div className="post">
-        <div className="image">
-        <img src="https://media.istockphoto.com/id/1352603244/photo/shot-of-an-unrecognizable-businessman-working-on-his-laptop-in-the-office.jpg?s=1024x1024&w=is&k=20&c=mTABddPRSU1r_hCBpknMjJbCIrJAicjjXGSU42rx-YI="></img>
-        </div>
-         <div class="texts">
-         <h2>Write form anywhere</h2>
-         <p className="info">
-          <a className="author">Dawid Pazsko</a>
-          <time>29-02-2024 18:13</time>
-         </p>
-         <p className="summary">Remote jobs have changed the way people work it has completely changed the worl wide view and has made it easier for people to work from anywhere and anyhow</p>
-         </div>
-      </div>
-      <div className="post">
-      <div className="image">
-        <img src="https://media.istockphoto.com/id/1352603244/photo/shot-of-an-unrecognizable-businessman-working-on-his-laptop-in-the-office.jpg?s=1024x1024&w=is&k=20&c=mTABddPRSU1r_hCBpknMjJbCIrJAicjjXGSU42rx-YI="></img>
-        </div>
-         <div class="texts">
-         <h2>Write form anywhere</h2>
-         <p className="info">
-          <a className="author">Dawid Pazsko</a>
-          <time>29-02-2024 18:13</time>
-         </p>
-         <p className="summary">Remote jobs have changed the way people work it has completely changed the worl wide view and has made it easier for people to work from anywhere and anyhow</p>
-         </div>
-         
-      </div>
-      <div className="post">
-      <div className="image">
-        <img src="https://media.istockphoto.com/id/1352603244/photo/shot-of-an-unrecognizable-businessman-working-on-his-laptop-in-the-office.jpg?s=1024x1024&w=is&k=20&c=mTABddPRSU1r_hCBpknMjJbCIrJAicjjXGSU42rx-YI="></img>
-        </div>
-         <div class="texts">
-         <h2>Write form anywhere</h2>
-         <p className="info">
-          <a className="author">Dawid Pazsko</a>
-          <time>29-02-2024 18:13</time>
-         </p>
-         <p className="summary">Remote jobs have changed the way people work it has completely changed the worl wide view and has made it easier for people to work from anywhere and anyhow</p>
-         </div>
-      </div>
-    </main>
+      <Routes>
+        <Route path="/" element={<Layout/>}>
+        <Route index element={<Post/>}/>
+        <Route path={'/login'} element={<div>login page</div>}/>
+        </Route>
+       
+
+        
+        </Routes>
   );
 }
 
