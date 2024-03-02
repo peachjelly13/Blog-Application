@@ -1,0 +1,30 @@
+Arguments: 
+  /home/ananya/.nvm/versions/node/v18.18.2/bin/node /usr/share/yarn/bin/yarn.js add no-lockfile true
+
+PATH: 
+  /home/ananya/.vscode-server/bin/8b3775030ed1a69b13e4f4c628c612102e30a681/bin/remote-cli:/home/ananya/.local/bin:/home/ananya/.nvm/versions/node/v18.18.2/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/WindowsApps/MicrosoftCorporationII.WindowsSubsystemForLinux_2.0.9.0_x64__8wekyb3d8bbwe:/mnt/c/oraclexe/app/oracle/product/11.2.0/server/bin:/mnt/c/Program Files/Microsoft/jdk-11.0.16.101-hotspot/bin:/mnt/c/Program Files (x86)/Common Files/Intel/Shared Libraries/redist/intel64/compiler:/mnt/c/WINDOWS/system32:/mnt/c/Users/anany/OneDrive/Desktop/cpp/mingw64/bin:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/MinGW/bin:/mnt/c/Program Files/flutter:/mnt/c/Program Files/Microsoft SQL Server/150/Tools/Binn/:/mnt/c/Program Files/nodejs:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/nodejs/:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/Users/anany/AppData/Local/Programs/Python/Python311/Scripts/:/mnt/c/Users/anany/AppData/Local/Programs/Python/Python311/:/mnt/c/Users/anany/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/anany/OneDrive/python/PyCharm Community Edition 2021.2/bin:/mnt/c/ProgramData/anany/atom/bin:/mnt/c/Users/anany/Music/Avogadro/bin:/mnt/c/Users/anany/AppData/Local/Microsoft/WindowsApps:/mnt/c/Program Files/JetBrains/CLion 2022.1.3/bin:/mnt/c/modeltech64_10.6d/win64:/mnt/c/Users/anany/.dotnet/tools:/mnt/c/Users/anany/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/anany/AppData/Roaming/npm:/snap/bin:C:Devvcpkg:C:Devvcpkg
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  18.18.2
+
+Platform: 
+  linux x64
+
+Trace: 
+  Error: certificate has expired
+      at TLSSocket.onConnectSecure (node:_tls_wrap:1600:34)
+      at TLSSocket.emit (node:events:517:28)
+      at TLSSocket._finishInit (node:_tls_wrap:1017:8)
+      at ssl.onhandshakedone (node:_tls_wrap:803:12)
+
+npm manifest: 
+  No manifest
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
