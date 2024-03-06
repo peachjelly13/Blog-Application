@@ -5,12 +5,12 @@ const { default: mongoose } = require('mongoose');
 const User = require('./models/User.js');
 const bcrypt = require('bcryptjs');
 const app = express();
-const salt = bcrypt.genSaltSync(10);
+let salt = bcrypt.genSaltSync(10);
 const jwt = require('jsonwebtoken');
 const secret = "abbsbsbhjsskksjksksk";
 
 
-app.use(cors());
+app.use(cors({credentials:true,origin:'http://localhost:3000'}));
 app.use(express.json());
 const corsOptions = {
   origin: '*', // or specify your frontend URL if it's hosted elsewhere
@@ -62,17 +62,13 @@ app.post('/login',async(req,res)=>{
       if(err){
         throw err;
       }
-      res.json(token);
+      res.cookie('token',token).json('ok');
 
     })
   }
   else{
     res.status(400).json('wrong credentials')
   }
-
-
 })
-
-
 app.listen(4000);
 
